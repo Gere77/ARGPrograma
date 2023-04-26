@@ -21,6 +21,8 @@ public abstract class Producto {
 	
 	public Producto(String t, int c, double p) {
 		this.titulo = t;
+		this.fechaPublicacion = LocalDate.of(1999, 1, 1);
+		this.editor = "";
 		this.codigo = c;
 		this.precio = p;
 	}
