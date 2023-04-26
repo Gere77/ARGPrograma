@@ -1,9 +1,11 @@
 package paquete;
 
+import java.time.LocalDate;
+
 public abstract class Producto {
 	
 	private String titulo;
-	private String fechaPublicacion;
+	private LocalDate fechaPublicacion;
 	private String editor;
 	private int codigo;
 	private double precio;
@@ -11,7 +13,7 @@ public abstract class Producto {
 	
 	public Producto() {	
 		this.titulo = "";
-		this.fechaPublicacion = "";
+		this.fechaPublicacion = LocalDate.of(1999, 1, 1);
 		this.editor = "";
 		this.codigo = 00;
 		this.precio = minPrecio;
@@ -23,7 +25,7 @@ public abstract class Producto {
 		this.precio = p;
 	}
 	
-	public Producto(String t, String fp, String e, int c, double p) {
+	public Producto(String t, LocalDate fp, String e, int c, double p) {
 		this.titulo = t;
 		this.fechaPublicacion = fp;
 		this.editor = e;
@@ -37,10 +39,10 @@ public abstract class Producto {
 	public void setTitulo(String titulo) {
 		this.titulo = titulo;
 	}
-	public String getFechaPublicacion() {
+	public LocalDate getFechaPublicacion() {
 		return fechaPublicacion;
 	}
-	public void setFechaPublicacion(String fechaPublicacion) {
+	public void setFechaPublicacion(LocalDate fechaPublicacion) {
 		this.fechaPublicacion = fechaPublicacion;
 	}
 	public String getEditor() {

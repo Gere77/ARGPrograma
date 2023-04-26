@@ -1,5 +1,7 @@
 package paquete;
 
+import java.time.LocalDate;
+
 public class Libro extends Producto{
 	
 	private String autor;
@@ -15,12 +17,12 @@ public class Libro extends Producto{
 	}
 
 
-	public Libro(String t, String fp, String e, int c, double p) {
+	public Libro(String t, LocalDate fp, String e, int c, double p) {
 		super(t, fp, e, c, p);
 		this.autor = "";
 	}
 	
-	public Libro(String t, String fp, String e, int c, double p, String a) {
+	public Libro(String t, LocalDate fp, String e, int c, double p, String a) {
 		super(t, fp, e, c, p);
 		this.autor = a;
 	}

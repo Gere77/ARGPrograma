@@ -1,5 +1,7 @@
 package paquete;
 
+import java.time.LocalDate;
+
 public class Revista extends Producto{
 	
 	public Revista() {
@@ -10,7 +12,7 @@ public class Revista extends Producto{
 		super(t, c, p);
 	}
 
-	public Revista(String t, String fp, String e, int c, double p) {
+	public Revista(String t, LocalDate fp, String e, int c, double p) {
 		super(t, fp, e, c, p);
 	}
 

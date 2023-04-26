@@ -5,7 +5,7 @@ public class Principal {
 	public static void main(String[] args) {
 		
 	//GENERO PRODUCTOS
-	Producto p1 = new Libro("Dune", 12, 530.43);
+	Producto p1 = new Libro("Dune" ,12, 530.43);
 	Producto p2 = new Revista("Caras", 11, 400.32);
 	Producto p3 = new Libro("Don Quijote", 12, 800);
 	Producto p4 = new Libro("El Principito", 12, 560.11);
@@ -20,7 +20,7 @@ public class Principal {
 	ItemCarrito i3 = new ItemCarrito(p2, 3, false);
 	ItemCarrito i4 = new ItemCarrito(p3, 3, true);
 	ItemCarrito i5 = new ItemCarrito(p5, 1, false);
-		
+	
 	//AGREGO ITEMS AL CARRITO
 	c.agregarItem(i1);
 	c.agregarItem(i2);
